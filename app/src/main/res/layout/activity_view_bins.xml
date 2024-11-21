@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/addkey_dashboard"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/backimage"
+    tools:context=".ViewBinsDashboard">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="View Bins"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:textColor="@color/MainGreen"
+        android:layout_marginBottom="20dp"
+        android:paddingTop="30dp"
+        android:paddingBottom="20dp"/>
+
+
+            <!-- Updated to use MaterialButton for corner radius support -->
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="DRY"
+                android:id="@+id/dry"
+                android:textSize="17sp"
+                android:layout_marginTop="20dp"
+                android:backgroundTint="@color/DarkGreen"
+                android:textColor="@color/white"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                app:cornerRadius="15dp" />
+
+    <!-- Updated to use MaterialButton for corner radius support -->
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="WET"
+        android:id="@+id/wet"
+        android:textSize="17sp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/DarkGreen"
+        android:textColor="@color/white"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        app:cornerRadius="15dp"/>
+
+    <!-- Updated to use MaterialButton for corner radius support -->
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="METAL"
+        android:id="@+id/metel"
+        android:textSize="17sp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/DarkGreen"
+        android:textColor="@color/white"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        app:cornerRadius="15dp"/>
+
+    <!-- ScrollView to hold the dynamic key buttons -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true">
+
+        <!-- LinearLayout where dynamic buttons will be added -->
+        <LinearLayout
+            android:id="@+id/history_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+    </ScrollView>
+
+</LinearLayout>

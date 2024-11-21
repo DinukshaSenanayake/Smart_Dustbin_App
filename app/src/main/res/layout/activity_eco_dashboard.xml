@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    android:gravity="center"
+    android:background="@drawable/eco"
+    tools:context=".EcoDashboard">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ECO-SUSTAINABILITY"
+        android:id="@+id/dashboardText"
+        android:textSize="36sp"
+        android:textAlignment="center"
+        android:paddingTop="70dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"/>
+
+
+    <ImageView
+        android:layout_width="125dp"
+        android:layout_height="156dp"
+        android:id="@+id/myImageView"
+        android:src="@drawable/cycle"
+        android:scaleType="fitXY"
+        android:layout_marginTop="20dp"/>
+
+
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:text="Reduce"
+        android:id="@+id/reduce"
+        android:textSize="20sp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:backgroundTint="@color/DarkGreen"
+        android:textColor="@color/white"
+        app:cornerRadius="15dp"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:text="Reuse"
+        android:id="@+id/reuse"
+        android:textSize="20sp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:backgroundTint="@color/DarkGreen"
+        android:textColor="@color/white"
+        app:cornerRadius="15dp"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:text="Recycle"
+        android:id="@+id/recycle"
+        android:textSize="20sp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:backgroundTint="@color/DarkGreen"
+        android:textColor="@color/white"
+        app:cornerRadius="15dp"/>
+
+    <!-- Empty View to push the Logout button to the bottom -->
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+
+
+    <!-- ScrollView to hold the dynamic key buttons -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true">
+
+        <!-- LinearLayout where dynamic buttons will be added -->
+        <LinearLayout
+            android:id="@+id/key_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+    </ScrollView>
+</LinearLayout>
